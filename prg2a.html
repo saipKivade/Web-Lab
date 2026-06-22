@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Feedback</title>
+
+<style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+h1,footer{text-align:center;}
+
+form{
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+label{display:block;margin:5px 0;}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width:100%;
+    padding:7px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:2px;
+}
+
+textarea{resize:vertical;}
+
+input[type=submit]{
+    background:#007bff;
+    color:#fff;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover{
+    background:#0056b3;
+    transform:scale(1.1);
+}
+
+footer{
+    background:#333;
+    color:#fff;
+    padding:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Student Feedback Form</h1>
+
+<form>
+
+<label>Full Name:</label>
+<input type="text" placeholder="Your name">
+
+<label>E-mail:</label>
+<input type="email" placeholder="Your Email id">
+
+<label>USN:</label>
+<input type="text" placeholder="Your USN">
+
+<label>Select Semester:</label>
+<select>
+    <option selected>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+</select>
+
+<label>Branch:</label>
+
+<input type="radio" name="branch"> Computer Science and Engineering <br>
+<input type="radio" name="branch"> Information Science <br>
+<input type="radio" name="branch"> Electronics and Communication <br>
+<input type="radio" name="branch"> Non-Circuit Branch <br><br>
+
+<label>Feedback:</label>
+<textarea rows="6" placeholder="Your Feedback & Suggestions"></textarea>
+
+<label>
+<input type="checkbox">
+Send me a copy of this Feedback
+</label>
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+<footer>
+<marquee direction="right">
+&copy; JSS Science and Technology University
+</marquee>
+</footer>
+
+</body>
+</html>
